@@ -1,0 +1,627 @@
+[
+  {
+    "title": "Wealthy company",
+    "description": "Isn't it time to take a part and divide it into all?",
+    "condition": {
+      "type": "and",
+      "conditions": [
+        {
+          "type": "param_in_range",
+          "param": "balance",
+          "min": 100000
+        }
+      ]
+    },
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "I want money!",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "mod_balance",
+                "amount": -10000
+              },
+              {
+                "type": "mod_players_balance",
+                "amount": 1000
+              },
+              {
+                "type": "send_message",
+                "message": "Very well, Your greed will be satisfied. Company lost money, but you earned some."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nah, I'm good",
+          "action": {
+            "type": "send_message",
+            "message": "We applaud Your integrity!"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "The Surplus",
+    "description": "Ok, now we have the Office S5 E10  situation - chairs or copier?",
+
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Chairs, Pam needs comfort",
+          "action": {
+            "type": "send_message",
+            "message": "Suck it, Jim!"
+          }
+        },
+        {
+          "name": "Copier, it's so broken!",
+          "action": {
+            "type": "send_message",
+            "message": "Suck it, Pam!"
+          }
+
+        }
+      ]
+    }
+  },
+  {
+    "title": "Odeur",
+    "description": "We found a smell source in the office, and it's something in the ventilation again... We can order a remake of it, which will reduce office rent",
+
+    "voting": {
+      "type": "money",
+      "target": 15000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "Thank You for being responsible workers! Rent decreased"
+          },
+          {
+            "type": "mod_salary",
+            "amount": -1000
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Award",
+    "description": "We got an award! However, we cannot withdraw it, we can only spend it on one of the development areas, or on charity.",
+
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Boost technology",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "The majority has voted for technology"
+              },
+              {
+                "type": "boost_param",
+                "param": "tech",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Boost marketing",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "The majority has voted for Marketing"
+              },
+              {
+                "type": "boost_param",
+                "param": "mark",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Boost UI",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "The majority has voted for UI"
+              },
+              {
+                "type": "boost_param",
+                "param": "ui",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Charity",
+          "action": {
+            "type": "send_message",
+            "message": "The majority has voted for charity"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "Top 1%",
+    "description": "Our company requires further investment to accelerate its growth.How about we tax our wealthiest investor for 10% and put his money in our company? For the greater good of course!",
+    "condition": {
+      "type": "top_player_has_money",
+      "amount": 20000
+    },
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Yes",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "mod_balance",
+                "amount": 10000
+              },
+              {
+                "type": "mod_top_player_balance",
+                "amount": -10000
+              },
+              {
+                "type": "send_message",
+                "message": "The majority courageously voted to tax the highest earner"
+              }
+            ]
+          }
+        },
+        {
+          "name": "No",
+          "action": {
+            "type": "send_message",
+            "message": "The majority voted No"
+          }
+        },
+        {
+          "name": "Yes..wait, it’s me! Hell no!",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "mod_balance",
+                "amount": 10000
+              },
+              {
+                "type": "mod_top_player_balance",
+                "amount": -10000
+              },
+              {
+                "type": "send_message",
+                "message": "First word is more important than second ;)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "I don't know!",
+          "action": {
+            "type": "send_message",
+            "message": "Well if you all don't know... Then NOTHING HAPPENED"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "Shady competition",
+    "description": "A disgruntled employee of our competitors offers a pretty valuable information regarding their incoming tech patent, but not for free. We can pay him and get a boost in Innovation and Technology  or decline and report him to authorities",
+
+    "voting": {
+      "type": "money",
+      "target": 20000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "All necessary funds have been transferred"
+          },
+          {
+            "type": "boost_param",
+            "param": "tech",
+            "amount": 20
+          },
+          {
+            "type": "boost_param",
+            "param": "inno",
+            "amount": 20
+          }
+        ]
+      }
+    }
+  },
+
+
+  {
+    "title": "My way or Hype way",
+    "description": "The thing about hype, baby, is that hype costs money. If you want your company to be the sweetest pie there is, than cash the check and count the clicks! ",
+
+    "voting": {
+      "type": "money",
+      "target": 10000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "Funds have been raised. All aboard the hype train! Hail to marketing!"
+          },
+          {
+            "type": "boost_param",
+            "param": "mark",
+            "amount": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Gamedev guru",
+    "description": "With our great advances in Game Development a new opportunities for investment become available",
+
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Choose better art",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our art department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "art",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Choose better gameplay",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our game design department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "game",
+                "amount": 20
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+
+  {
+    "title": "Web guru",
+    "description": "With our great advances in Web Development a new opportunities for investment become available",
+
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Choose better frontend",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our frontend department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "front",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Choose better backend",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our backend department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "back",
+                "amount": 20
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+
+  {
+    "title": "Software guru",
+    "description": "With our great advances in Software Development a new opportunities for investment become available",
+
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "Choose better AI",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our AI department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "ai",
+                "amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "name": "Choose better relevance",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Our relevance department has been improved"
+              },
+              {
+                "type": "boost_param",
+                "param": "rel",
+                "amount": 20
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "Heart of cash",
+    "description": "Hello there. I’m terribly sorry for bothering You, I’m here from an international association of doctors. We are collecting donations that will be spent on helping the medical personal in this difficult time. Right now we are 50 000$ shy of buying another supply of equipment. Can we count on Your help?",
+    "condition": {
+      "type": "param_in_range",
+      "param": "balance",
+      "min": 100000
+    },
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "My huge pile of money says NO!",
+          "action": {
+            "type": "send_message",
+            "message": "We declined to donate"
+          }
+        },
+        {
+          "name": "We need to help each other. Donate",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Donation goal has been reached"
+              },
+              {
+                "type": "mod_balance",
+                "amount": -50000
+              }
+            ]
+          }
+        },
+        {
+          "name": "50 000$? We can donate 100 000$, right guys?",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "send_message",
+                "message": "Donation extra goal has been reached!"
+              },
+              {
+                "type": "mod_balance",
+                "amount": -100000
+              }
+            ]
+          }
+        },
+
+        {
+          "name": "IDK, decide for yourself",
+          "action": {
+            "type": "send_message",
+            "message": "Well if you all don't know... Then NOTHING HAPPENED"
+          }
+        }
+      ]
+    }
+  },
+  
+  
+ 
+  {
+
+    "title": "The Richest Bum",
+    "description": "We all are very fortunate to live our opulent lives. However, one of us is significantly cheaper than the other. Now we can’t just throw him out so I suggest that we’ll donate our money to the less fortunate one",
+    "voting": {
+      "type": "money",
+      "target": 5000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "Donation goal has been reached. Our bum is not such a bum anymore"
+          },
+          {
+            "type": "mod_worst_player_balance",
+            "amount": 5000
+          }
+        ]
+      }
+    }
+  },
+  
+
+
+  {
+    "title": "I vs We",
+    "description": "One one the most prominent IT magazines asked you about the reasons for your company’s recent successes",
+    "voting": {
+      "type": "options",
+      "options": [
+        {
+          "name": "It was all ME!",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "boost_param",
+                "param": "mark",
+                "amount": 20
+              },
+              {
+                "type": "send_message",
+                "message": "Companys' marketing, as well as Your ego, has inflated"
+              }
+            ]
+          }
+        },
+        {
+          "name": "We have the best team there is!",
+          "action": {
+            "type": "composite",
+            "actions": [
+              {
+                "type": "boost_param",
+                "param": "relevance",
+                "amount": 20
+              },
+              {
+                "type": "send_message",
+                "message": "Companys' relevance has increased"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  
+
+  {
+    "title": "Office grade I",
+    "description": "We can grade our office! Rent will be higher, but new contracts will be available!",
+    "type": "and",
+    "condition": {
+      "type": "not",
+      "condition": {
+        "type": "has_flag",
+        "flag": "Office2"
+      }
+    },
+
+    "voting": {
+      "type": "money",
+      "target": 100000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "Office is graded!"
+          },
+          {
+            "type": "grade_office",
+            "grade": 1
+          },
+          {
+            "type": "set_flag",
+            "flag": "Office2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Office grade I",
+    "description": "We can grade our office! Rent will be higher, but new contracts will be available!",
+    "condition": {
+      "type": "and",
+      "conditions": [
+        {
+          "type": "not",
+          "condition": {
+            "type": "has_flag",
+            "flag": "Office3"
+          }
+        },
+        {
+          "type": "has_flag",
+          "flag": "Office2"
+        }
+      ]
+    },
+
+    "voting": {
+      "type": "money",
+      "target": 500000,
+      "success_action": {
+        "type": "composite",
+        "actions": [
+          {
+            "type": "send_message",
+            "message": "Office is graded!"
+          },
+          {
+            "type": "grade_office",
+            "grade": 1
+          },
+          {
+            "type": "set_flag",
+            "flag": "Office3"
+          }
+        ]
+      }
+    }
+  }
+]

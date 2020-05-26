@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Utils
@@ -38,6 +40,11 @@ namespace Utils
         {
             var idx = Random.Range(0, items.Count);
             return items[idx];
+        }
+
+        public static List<T> NRandom<T>(IEnumerable<T> list, int elementsCount)
+        {
+            return list.OrderBy(arg => Random.value).Take(elementsCount).ToList();
         }
     }
 }

@@ -1,0 +1,238 @@
+[
+  {
+    "name": "iKill",
+    "description": "Creation of a fully functional AI with german accent",
+    "work": {
+      "options": [
+        {
+          "name": "Research",
+          "key": "research",
+          "target": 300
+        },
+        {
+          "name": "Model training",
+          "key": "model",
+          "target": 200
+        },
+        {
+          "name": "Backend development",
+          "key": "backend",
+          "target": 200
+        }
+      ]
+    },
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 0,
+      "technology": 100,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "inSight",
+    "description": "Development of a virtual city panorama",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 25,
+      "technology": 75,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "Safe Distance",
+    "description": "Development of an application with the most relevant and credible about Covid-19 ",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 25,
+      "technology": 25,
+      "relevance": 50
+    }
+  },
+  {
+    "name": "BOOM 2",
+    "description": "Next chapter in a AAA shooter franchize",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 60,
+      "technology": 30,
+      "relevance": 10
+    }
+  },
+  {
+    "name": "Pancake Tzar",
+    "description": "Website for a brand new fast food chain",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 33,
+      "technology": 33,
+      "relevance": 33
+    }
+  },
+  {
+    "name": "Handy Granny",
+    "description": "Website for sewing accessories",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 20,
+      "technology": 80,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "Dark Night 2: The Day",
+    "description": "Online adds for a new blockbuster",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 100,
+      "technology": 0,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "Ok boomer",
+    "description": "Urban dictionary for an older generation",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 0,
+      "technology": 0,
+      "relevance": 100
+    }
+  },
+  {
+    "name": "ICU",
+    "description": "Totally legal surveillance program",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 20,
+      "technology": 80,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "Coliseum A.D",
+    "description": "Virtual arena for an esports events",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 20,
+      "technology": 60,
+      "relevance": 20
+    }
+  },
+  {
+    "name": "3zam",
+    "description": "Shazam, but for trees",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 20,
+      "technology": 80,
+      "relevance": 0
+    }
+  },
+
+  {
+    "name": "Learn to reCycle",
+    "description": "Educational platform with recycling instructions",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 40,
+      "technology": 10,
+      "relevance": 50
+    }
+  },
+
+  {
+    "name": "CutieG",
+    "description": "Innovative RPG with the cutest characters ever created",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 50,
+      "technology": 45,
+      "relevance": 5
+    }
+  },
+
+  {
+    "name": "ARctiman",
+    "description": "Promotional AR campaign for a famous joghurt brand",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 65,
+      "technology": 35,
+      "relevance": 0
+    }
+  },
+  {
+    "name": "Cross ML palm with silver",
+    "description": "ML algorythm to predict future based on the palm photo",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 10,
+      "technology": 75,
+      "relevance": 15
+    }
+  },
+  {
+    "name": "Cat's Heritage",
+    "description": "ML algorithm to build family trees for cats",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 10,
+      "technology": 80,
+      "relevance": 10
+    }
+  },
+
+  {
+  "name": "ISMLSS",
+  "description": "Innovative and smart ML-based security system",
+  "success_action": {
+    "type": "get_reward",
+    "marketing": 15,
+    "technology": 75,
+    "relevance": 10
+    }
+  },
+
+  {
+    "name": "Parents of the Nile",
+    "description": "Strategy about pre-historic wildlife in Egypt",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 45,
+      "technology": 40,
+      "relevance": 15
+    }
+  },
+  {
+    "name": "LunAR",
+    "description": "Mobile app with AR Lunar Calendar visualization",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 10,
+      "technology": 50,
+      "relevance": 20
+    }
+  },
+
+  {
+    "name": "Bodybook",
+    "description": "Facebook, but better",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 50,
+      "technology": 50,
+      "relevance": 0
+    }
+  },
+
+  {
+    "name": "SpeechLess",
+    "description": "Translator into sign languages for children",
+    "success_action": {
+      "type": "get_reward",
+      "marketing": 10,
+      "technology": 70,
+      "relevance": 20
+    }
+  }
+]

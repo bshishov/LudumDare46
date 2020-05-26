@@ -16,7 +16,7 @@ namespace Utils.Debugger
         {
             _lineMesh = MeshUtils.LineMesh(Vector3.zero, Vector3.forward);
             _circleMesh = MeshUtils.CircleMesh(1f);
-            _material = new Material(Shader.Find("Unlit/Color"));
+            _material = new Material(Shader.Find("Legacy Shaders/Diffuse"));
         }
 
         public Material GetMaterial(Color col)
@@ -83,6 +83,7 @@ namespace Utils.Debugger
             float duration)
         {
             direction.Normalize();
+
             Debugger.Default.DrawCircle(origin, Vector3.up, sphereSize, color, duration);
             Debugger.Default.DrawRay(new Ray(origin, direction), color, sphereSize, duration);
             Debugger.Default.DrawRay(new Ray(origin, Quaternion.Euler(0, -angle * 0.5f, 0) * direction), color,

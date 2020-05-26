@@ -17,7 +17,7 @@ namespace Utils.FSM
         public Action<TStateKey> StateChanged;
         public TStateKey? CurrentState { get; private set; }
 
-        public TStateKey? CurrentStateKey => CurrentState;
+        public IStateBehaviour<TStateKey> CurrentBehaviour => _currentState;
 
         public void AddState(TStateKey key, IStateBehaviour<TStateKey> state)
         {

@@ -1,0 +1,74 @@
+{
+    "Items": [
+        {
+            "Name": "ittycoon",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": true,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 250.0
+        },
+        {
+            "Name": "lurxx",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        },
+        {
+            "Name": "shishov",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        },
+        {
+            "Name": "whataboutgaminglive",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        },
+        {
+            "Name": "aten",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        },
+        {
+            "Name": "badabooom63",
+            "Balance": 0.0,
+            "IsModerator": true,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 240.0
+        },
+        {
+            "Name": "ultraarceus3",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        }
+    ]
+}

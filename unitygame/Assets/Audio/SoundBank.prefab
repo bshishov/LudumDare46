@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7610626168739173534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7610626168739173528}
+  - component: {fileID: 7610626168739173529}
+  m_Layer: 0
+  m_Name: SoundBank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7610626168739173528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610626168739173534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7610626168739173529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610626168739173534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24da40aba44e4ce49180bfaf58bba21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopupOpen:
+    Clip: {fileID: 0}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  VoteReceived:
+    Clip: {fileID: 8300000, guid: 0ccc72ca1a074d74fb733eb06832dc3a, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.1
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 2
+    RandomizeDelay: 0
+    RandomizePitch: 1
+    VolumeModifier: 1.109
+  ContractFinished:
+    Clip: {fileID: 8300000, guid: b71e76efd07eff74e9bc202337b067d3, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  ContractStarted:
+    Clip: {fileID: 8300000, guid: e2171eff2bb63804ca9aa173470ffed7, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  ContractBoost:
+    Clip: {fileID: 8300000, guid: 88a97007541230f42b1aae43b0718a94, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1.5
+  Bankruptcy:
+    Clip: {fileID: 8300000, guid: ce15c623570685041ab91f0c7b618508, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1.2
+  NewCompany:
+    Clip: {fileID: 8300000, guid: 51907b7309768f84994b9883d5317e79, type: 3}
+    Delay: 0.503
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  NewEvent:
+    Clip: {fileID: 8300000, guid: 9c6cda43c60866e42bbf24fdf426dae8, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: -6980156059932557954, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  SalaryExpenses:
+    Clip: {fileID: 8300000, guid: d88a17401dc3b694d95ff706fd83f50e, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: 0}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 0.7
+  OfficeUpgrade:
+    Clip: {fileID: 0}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: 0}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  MoneyEarned:
+    Clip: {fileID: 8300000, guid: 57e208281518be74ebf8ecadb484ca33, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 0
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: 0}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 1
+  BackgroundMusic:
+    Clip: {fileID: 8300000, guid: 6909981c3b7d09644a39c98833aed1e6, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 1
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0
+    MixerGroup: {fileID: 6129863029522584519, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 0.073
+  OfficeSoundsAmbience:
+    Clip: {fileID: 8300000, guid: 51fe4fe963c59544289aa1c4fd5c357e, type: 3}
+    Delay: 0
+    IgnoreListenerPause: 0
+    Loop: 1
+    MaxAdditionalDelay: 0
+    MaxPitchShift: 0.05
+    MixerGroup: {fileID: 6129863029522584519, guid: edd2258d704051b47ab1a8a3c4cb9fff,
+      type: 2}
+    Pitch: 1
+    RandomizeDelay: 0
+    RandomizePitch: 0
+    VolumeModifier: 0.91

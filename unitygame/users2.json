@@ -1,0 +1,164 @@
+{
+    "Items": [
+        {
+            "Name": "ittycoon",
+            "Balance": 10319.6767578125,
+            "IsModerator": false,
+            "IsBroadcaster": true,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 140000.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "kolkav",
+            "Balance": 16575.646484375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 5000.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "xxxdosxxx",
+            "Balance": 14319.685546875,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "shishovtv",
+            "Balance": 8833.7734375,
+            "IsModerator": true,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "birdy90",
+            "Balance": 14319.685546875,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "shishov",
+            "Balance": 14309.724609375,
+            "IsModerator": true,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 75000.0,
+            "SpentMoneyOnSelf": 280096.46875,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "badabooom63",
+            "Balance": 14303.3505859375,
+            "IsModerator": true,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 45000.0,
+            "SpentMoneyOnSelf": 38648832.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "thirdface2",
+            "Balance": 6365.31640625,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 10000.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "commanderroot",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "honzapat",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "scambotica",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "a1bear",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "anotherttvviewer",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "lurxx",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "whataboutgaminglive",
+            "Balance": 9832.7734375,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 0.0
+        },
+        {
+            "Name": "aten",
+            "Balance": 1000.0,
+            "IsModerator": false,
+            "IsBroadcaster": false,
+            "IsSubscriber": false,
+            "SpentMoneyOnCompany": 0.0,
+            "SpentMoneyOnSelf": 0.0,
+            "WorkPower": 200.0
+        }
+    ]
+}
